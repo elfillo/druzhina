@@ -1,0 +1,43 @@
+.topBlock {
+  width: 100%;
+  display: flex;
+  margin: 185px auto;
+  padding: 0 90px; }
+  @media screen and (max-width: 1366px) {
+    .topBlock {
+      margin: 30px auto;
+      padding: 0 20px; } }
+  @media screen and (max-width: 940px) {
+    .topBlock {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      margin: 15px auto; }
+      .topBlock div {
+        width: 100%; } }
+  .topBlock__img {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .topBlock__img img {
+      width: 100%;
+      height: auto; }
+  .topBlock__text {
+    width: 40%;
+    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background-color: #c2b59b; }
+    @media screen and (max-width: 1366px) {
+      .topBlock__text {
+        padding: 0 20px; } }
+
+/*# sourceMappingURL=topBlock.css.map */

@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  margin-left: auto;
+  height: 550px; }
+  .footer #map {
+    width: 100%;
+    height: 100%; }
+    .footer #map .gmnoprint {
+      display: none; }
+
+/*# sourceMappingURL=footer.css.map */
