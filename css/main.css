@@ -331,7 +331,7 @@
           align-items: center;
   overflow: hidden !important; }
   .swiper-slide img {
-    width: 80%;
+    width: auto;
     height: auto; }
 
 .swiper-button-next,
