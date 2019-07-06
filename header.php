@@ -14,7 +14,9 @@
         <div class="burger"><span></span><span></span><span></span></div>
     </div>
     <header class="header">
-        <div class="logo"></div>
+        <a href="/">
+            <div class="logo"></div>
+        </a>
         <nav class="nav">
             <?php wp_nav_menu(array('theme_location'=>'Main', 'menu_class'=>'nav_list') );?>
             <div class="social">
