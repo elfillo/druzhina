@@ -69,6 +69,7 @@ $(document).ready(function () {
    let border = $('.change_border');
    let colorText = $('.change_color');
    let fill = $('.change_fill');
+   let btnBlackText = $('.btn--black');
    let sliderBullet = $('.swiper-pagination-bullet-active');
    let social = $('.social-svg-icon');
    let arrow = $('.slider-arrow');
@@ -109,6 +110,14 @@ $(document).ready(function () {
            })
        }, function () {
            $(this).css({backgroundColor: '#fff', color: color});
+       });
+       btnBlackText.hover(function () {
+           $(this).css({
+               backgroundColor: color,
+               color: '#fff',
+           })
+       }, function () {
+           $(this).css({backgroundColor: '#fff', color: '#000'});
        });
        colorText.css({color: color});
        fill.css({backgroundColor: color});
