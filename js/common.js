@@ -67,8 +67,10 @@ $(function () {
 $(document).ready(function () {
    let active = $('.active');
    let border = $('.change_border');
+   let borderNoHover = $('.change_border-no_hover');
    let colorText = $('.change_color');
    let fill = $('.change_fill');
+   let fillNoHover = $('.change_fill-no_hover');
    let btnBlackText = $('.btn--black');
    let sliderBullet = $('.swiper-pagination-bullet-active');
    let social = $('.social-svg-icon');
@@ -103,6 +105,7 @@ $(document).ready(function () {
    function change(color){
        active.css({color: color});
        border.css({border: '1px solid ' + color});
+       borderNoHover.css({border: '1px solid ' + color});
        border.hover(function () {
            $(this).css({
                backgroundColor: color,
@@ -121,6 +124,7 @@ $(document).ready(function () {
        });
        colorText.css({color: color});
        fill.css({backgroundColor: color});
+       fillNoHover.css({backgroundColor: color});
        fill.hover(function () {
            $(this).css({
                backgroundColor: '#fff',
