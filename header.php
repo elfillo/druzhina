@@ -18,22 +18,22 @@
         <nav class="nav">
             <?php wp_nav_menu(array('theme_location'=>'Main', 'menu_class'=>'nav_list') );?>
             <div class="social">
-                <a href="https://vk.com/remontirkutsk">
+                <a href="https://vk.com/remontirkutsk" target="_blank">
                     <svg class="social-svg-icon">
                         <use xlink:href="#icon--vk"></use>
                     </svg>
                 </a>
-                <a href="https://www.facebook.com/RemontMasterD/?modal=admin_todo_tour">
+                <a href="https://www.facebook.com/RemontMasterD/?modal=admin_todo_tour" target="_blank">
                     <svg class="social-svg-icon">
                         <use xlink:href="#icon--fb"></use>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/remont_md/">
+                <a href="https://www.instagram.com/remont_md/" target="_blank">
                     <svg class="social-svg-icon">
                         <use xlink:href="#icon--inst"></use>
                     </svg>
                 </a>
-                <a href="https://ok.ru/group/53902393147527">
+                <a href="https://ok.ru/group/53902393147527" target="_blank">
                     <svg class="social-svg-icon">
                         <use xlink:href="#icon--ok"></use>
                     </svg>
