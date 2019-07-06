@@ -102,8 +102,25 @@ $(document).ready(function () {
    function change(color){
        active.css({color: color});
        border.css({border: '1px solid ' + color});
+       border.hover(function () {
+           $(this).css({
+               backgroundColor: color,
+               color: '#fff',
+           })
+       }, function () {
+           $(this).css({backgroundColor: '#fff', color: color});
+       });
        colorText.css({color: color});
        fill.css({backgroundColor: color});
+       fill.hover(function () {
+           $(this).css({
+               backgroundColor: '#fff',
+               border: '1px solid' + color,
+               color: color,
+           })
+       }, function () {
+           $(this).css({backgroundColor: color, color: '#fff'});
+       });
        social.hover(function () {
            $(this).css({fill: color});
        }, function () {
