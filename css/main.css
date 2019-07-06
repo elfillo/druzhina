@@ -526,10 +526,10 @@ a.active {
       z-index: 100; } }
   .header .logo {
     width: 100%;
-    height: 159px;
+    height: 100px;
     margin-bottom: 25px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left center;
     background-size: contain; }
     .header .logo_default {
       background-image: url("/wp-content/themes/druzhina/img/logos/default.svg"); }
