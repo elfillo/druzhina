@@ -5,6 +5,7 @@
   display: flex
   align-items: center
   margin-bottom: 100px
+  padding: 0 20px
   @media screen and (max-width: 1200px)
     padding: 0 20px
     margin-bottom: 50px
@@ -36,6 +37,8 @@
       font-size: 18px
       font-weight: 400
       line-height: 16px
+      &:disabled
+        color: $black
     textarea
       width: 416px
       @media screen and (max-width: 940px)
@@ -46,7 +49,9 @@
       padding: 10px
       font-size: 18px
       font-weight: 400
-      line-height: 16px
+      line-height: 20px
+      &:disabled
+        color: $black
     .buttons
       width: 100%
       display: flex

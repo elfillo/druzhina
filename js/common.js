@@ -46,7 +46,7 @@ $(document).ready(function(){
 });
 //open modal window
 $(document).ready(function(){
-    $('.btn').click(function () {
+    $('.btn--modal').click(function () {
         $('.modal').css({'display':'flex'});
     })
 });

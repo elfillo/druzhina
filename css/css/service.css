@@ -68,6 +68,12 @@
           .services .service__text .title {
             margin: 10px auto;
             font-size: 16px; } }
+      .services .service__text .btn {
+        width: 50%;
+        margin-top: 20px; }
+        @media screen and (max-width: 940px) {
+          .services .service__text .btn {
+            width: 100%; } }
   .services .service:nth-child(2) {
     flex-direction: row-reverse; }
     @media screen and (max-width: 940px) {

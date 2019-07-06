@@ -1,11 +1,12 @@
 .topBlock {
   width: 100%;
   display: flex;
-  margin: 185px auto;
+  margin: 0 auto;
   padding: 0 90px; }
   @media screen and (max-width: 1366px) {
     .topBlock {
       margin: 30px auto;
+      margin-top: 0;
       padding: 0 20px; } }
   @media screen and (max-width: 940px) {
     .topBlock {
@@ -13,7 +14,8 @@
       align-items: center;
       justify-content: center;
       padding: 0 10px;
-      margin: 15px auto; }
+      margin: 15px auto;
+      margin-top: 0; }
       .topBlock div {
         width: 100%; } }
   .topBlock__img {
