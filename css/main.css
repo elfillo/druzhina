@@ -581,8 +581,7 @@ a.active {
     z-index: 110; }
     .mobile .burger span {
       width: 100%;
-      height: 3px;
-      background-color: #f1592a; }
+      height: 3px; }
 
 .nav {
   width: 100%; }

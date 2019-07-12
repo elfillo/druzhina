@@ -11,7 +11,11 @@
 <?php get_template_part('parts/modal'); ?>
 <div class="container">
     <div class="mobile">
-        <div class="burger"><span></span><span></span><span></span></div>
+        <div class="burger">
+            <span class="change_fill"></span>
+            <span class="change_fill"></span>
+            <span class="change_fill"></span>
+        </div>
     </div>
     <header class="header">
         <a href="/">
