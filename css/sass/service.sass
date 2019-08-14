@@ -65,8 +65,9 @@
         margin-top: 20px
         @media screen and (max-width: 940px)
           width: 100%
-  .service:nth-child(2)
-    flex-direction: row-reverse
-    @media screen and (max-width: 940px)
-      flex-direction: column
+  .service
+    &:nth-child(even)
+      flex-direction: row-reverse
+      @media screen and (max-width: 940px)
+        flex-direction: column
 

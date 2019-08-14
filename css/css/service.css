@@ -74,10 +74,10 @@
         @media screen and (max-width: 940px) {
           .services .service__text .btn {
             width: 100%; } }
-  .services .service:nth-child(2) {
+  .services .service:nth-child(even) {
     flex-direction: row-reverse; }
     @media screen and (max-width: 940px) {
-      .services .service:nth-child(2) {
+      .services .service:nth-child(even) {
         flex-direction: column; } }
 
 /*# sourceMappingURL=service.css.map */

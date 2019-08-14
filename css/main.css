@@ -185,13 +185,13 @@
         @media screen and (max-width: 940px) {
           .services .service__text .btn {
             width: 100%; } }
-  .services .service:nth-child(2) {
+  .services .service:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
     @media screen and (max-width: 940px) {
-      .services .service:nth-child(2) {
+      .services .service:nth-child(even) {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
