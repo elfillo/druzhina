@@ -15,9 +15,9 @@ if($uri === '/')
                 <div class="title">
                     <?php the_title();?>
                 </div>
-                <p>
+                <div class="desc">
                     <?php the_content();?>
-                </p>
+                </div>
                 <div class="btn btn--modal btn--small btn--orange change_border change_color">Заказать</div>
             </div>
         </div>
