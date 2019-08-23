@@ -60,6 +60,11 @@
           width: 100%;
           padding: 0;
           font-size: 12px; } }
+      .services .service__text .desc {
+        display: block;
+        width: 100%;
+        margin-right: 50%;
+        text-align: right; }
       .services .service__text .title {
         width: 100%;
         font-size: 18px;
@@ -76,6 +81,11 @@
             width: 100%; } }
   .services .service:nth-child(even) {
     flex-direction: row-reverse; }
+    .services .service:nth-child(even) .desc {
+      display: block;
+      width: 100%;
+      padding-left: 50%;
+      text-align: left; }
     @media screen and (max-width: 940px) {
       .services .service:nth-child(even) {
         flex-direction: column; } }

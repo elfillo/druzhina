@@ -4,32 +4,29 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   font-weight: 400;
-  border: 1px solid #f1592a;
+  border: 1px;
   cursor: pointer; }
-  .btn--fill {
-    background-color: #f1592a; }
-  .btn--orange {
-    color: #f1592a; }
   .btn--black {
     color: #000; }
   .btn--white {
     color: #fff; }
   .btn--big {
-    height: 80px; }
+    height: 50px; }
   .btn--small {
     height: 40px; }
 
 .topBlock {
   width: 100%;
   display: flex;
-  margin: 185px auto;
+  margin: 0 auto;
   padding: 0 90px; }
   @media screen and (max-width: 1366px) {
     .topBlock {
       margin: 30px auto;
+      margin-top: 0;
       padding: 0 20px; } }
   @media screen and (max-width: 940px) {
     .topBlock {
@@ -37,7 +34,8 @@
       align-items: center;
       justify-content: center;
       padding: 0 10px;
-      margin: 15px auto; }
+      margin: 15px auto;
+      margin-top: 0; }
       .topBlock div {
         width: 100%; } }
   .topBlock__img {
@@ -126,6 +124,11 @@
           width: 100%;
           padding: 0;
           font-size: 12px; } }
+      .services .service__text .desc {
+        display: block;
+        width: 100%;
+        margin-right: 50%;
+        text-align: right; }
       .services .service__text .title {
         width: 100%;
         font-size: 18px;
@@ -134,14 +137,26 @@
           .services .service__text .title {
             margin: 10px auto;
             font-size: 16px; } }
-  .services .service:nth-child(2) {
+      .services .service__text .btn {
+        width: 50%;
+        margin-top: 20px; }
+        @media screen and (max-width: 940px) {
+          .services .service__text .btn {
+            width: 100%; } }
+  .services .service:nth-child(even) {
     flex-direction: row-reverse; }
+    .services .service:nth-child(even) .desc {
+      display: block;
+      width: 100%;
+      padding-left: 50%;
+      text-align: left; }
     @media screen and (max-width: 940px) {
-      .services .service:nth-child(2) {
+      .services .service:nth-child(even) {
         flex-direction: column; } }
 
 .footer {
   width: 100%;
+  padding: 0 20px;
   margin-left: auto;
   height: 550px; }
   .footer #map {
@@ -154,7 +169,8 @@
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding: 0 20px; }
   @media screen and (max-width: 1200px) {
     .bottomBlock {
       padding: 0 20px;
@@ -189,6 +205,8 @@
       @media screen and (max-width: 940px) {
         .bottomBlock .form input {
           width: 100%; } }
+      .bottomBlock .form input:disabled {
+        color: #000; }
     .bottomBlock .form textarea {
       width: 416px;
       height: 94px;
@@ -197,10 +215,12 @@
       padding: 10px;
       font-size: 18px;
       font-weight: 400;
-      line-height: 16px; }
+      line-height: 20px; }
       @media screen and (max-width: 940px) {
         .bottomBlock .form textarea {
           width: 100%; } }
+      .bottomBlock .form textarea:disabled {
+        color: #000; }
     .bottomBlock .form .buttons {
       width: 100%;
       display: flex;
@@ -227,6 +247,10 @@
       color: #f1592a;
       text-align: center; }
 
+.slider-arrow {
+  width: 40px;
+  height: 53px; }
+
 .swiper-container {
   width: 100%;
   height: 100%; }
@@ -240,12 +264,12 @@
   align-items: center;
   overflow: hidden !important; }
   .swiper-slide img {
-    width: 80%;
+    width: auto;
     height: auto; }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  background-image: url("../img/arrow.svg") !important; }
+  background-image: none !important; }
   @media screen and (max-width: 940px) {
     .swiper-button-next,
     .swiper-container-rtl .swiper-button-prev {
@@ -253,7 +277,7 @@
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  background-image: url("../img/arrow.svg") !important;
+  background-image: none !important;
   transform: rotate(180deg); }
   @media screen and (max-width: 940px) {
     .swiper-button-prev,
@@ -276,14 +300,16 @@
     border: none !important;
     outline: none !important; }
 
+.swiper-pagination {
+  display: none; }
+
 .close {
   width: 30px;
   height: 30px;
   border: 1px solid #f1592a;
   position: relative;
   cursor: pointer; }
-  .close:before {
-    content: "";
+  .close span {
     display: block;
     position: absolute;
     width: 100%;
@@ -291,15 +317,8 @@
     background-color: #f1592a;
     transform: rotate(45deg);
     top: 50%; }
-  .close:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #f1592a;
-    transform: rotate(-45deg);
-    top: 50%; }
+    .close span:last-child {
+      transform: rotate(-45deg); }
 
 .modal {
   width: 100vw;
@@ -356,7 +375,7 @@
 
 @font-face {
   font-family: "Russia";
-  src: url(/fonts/russia.ttf); }
+  src: url(../fonts/russia.ttf); }
 body {
   font-family: "Russia"; }
 
@@ -369,7 +388,8 @@ body {
       width: 100%; } }
 
 .content {
-  width: calc(100% - 447px); }
+  width: calc(100% - 447px);
+  margin-left: auto; }
   @media screen and (max-width: 1366px) {
     .content {
       width: calc(100% - 300px); } }
@@ -385,9 +405,15 @@ a.active {
 
 .header {
   width: 447px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
   margin-left: 45px;
   display: flex;
   flex-direction: column; }
+  .header ::-webkit-scrollbar {
+    display: none !important; }
   @media screen and (max-width: 1366px) {
     .header {
       width: 300px;
@@ -403,8 +429,15 @@ a.active {
       z-index: 100; } }
   .header .logo {
     width: 100%;
-    height: auto;
-    margin-bottom: 50px; }
+    height: 100px;
+    margin-bottom: 25px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain; }
+    .header .logo_default {
+      background-image: url("/wp-content/themes/druzhina/img/logos/default.svg"); }
+    .header .logo_kliningovyeRaboty {
+      background-image: url("/wp-content/themes/druzhina/img/logos/kliningovyeRaboty.svg"); }
     @media screen and (max-width: 1200px) {
       .header .logo {
         display: none; } }
@@ -438,11 +471,12 @@ a.active {
     z-index: 110; }
     .mobile .burger span {
       width: 100%;
-      height: 3px;
-      background-color: #f1592a; }
+      height: 3px; }
 
 .nav {
   width: 100%; }
+  .nav ::-webkit-scrollbar {
+    display: none !important; }
   @media screen and (max-width: 1200px) {
     .nav {
       width: 500px;
@@ -455,7 +489,7 @@ a.active {
 
 .nav_list {
   width: 100%;
-  margin-bottom: 50px; }
+  margin-bottom: 25px; }
   .nav_list li {
     padding-bottom: 5px;
     font-size: 18px;
@@ -469,6 +503,11 @@ a.active {
   display: flex;
   align-items: center;
   margin-bottom: 30px; }
+  .social-svg-icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+    fill: #000; }
   .social a {
     margin-right: 8px; }
     .social a:last-child {
