@@ -12,7 +12,6 @@ html {
 .no_scroll{
     overflow: hidden;
 }
-ol,
 li {
     list-style: none;
 }
