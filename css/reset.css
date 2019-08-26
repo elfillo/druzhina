@@ -13,7 +13,7 @@ html {
     overflow: hidden;
 }
 ol > li {
-    list-style: -moz-arabic-indic;
+    list-style: -moz-arabic-indic !important;
 }
 li {
     list-style: none;
