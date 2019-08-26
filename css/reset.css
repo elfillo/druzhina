@@ -12,6 +12,9 @@ html {
 .no_scroll{
     overflow: hidden;
 }
+ol > li {
+    list-style: -moz-arabic-indic;
+}
 li {
     list-style: none;
 }
