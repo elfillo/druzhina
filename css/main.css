@@ -512,6 +512,9 @@ a {
 a.active {
   color: #f1592a; }
 
+.header::-webkit-scrollbar {
+  display: none !important; }
+
 .header {
   width: 447px;
   position: fixed;
@@ -526,8 +529,6 @@ a.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .header ::-webkit-scrollbar {
-    display: none !important; }
   @media screen and (max-width: 1366px) {
     .header {
       width: 300px;
