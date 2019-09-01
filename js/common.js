@@ -102,6 +102,9 @@ $(document).ready(function () {
    let kliningovyeRabotyLogo = 'kliningovyeRaboty';
    let defaultLogo = 'default';
 
+   let santehnicheskieRabotyTop = '#3686a1';
+   let defaultTopBlockColor = '#c2b59b';
+
    function change(color){
        active.css({color: color});
        border.css({border: '1px solid ' + color});
@@ -148,6 +151,11 @@ $(document).ready(function () {
        logoBox.css({'backgroundImage': imgSrc});
    }
 
+   function changeTopBlockColor(color) {
+       let topBlock = $('.topBlock__text');
+       topBlock.css({'backgroundColor': color});
+   }
+
    switch (window.location.pathname) {
        case dizajnProekt:
            change(dizajnProektColor);
@@ -160,6 +168,7 @@ $(document).ready(function () {
        case santehnicheskieRaboty:
            change(santehnicheskieRabotyColor);
            changeLogo(santehnicheskieRabotyLogo);
+           changeTopBlockColor(santehnicheskieRabotyTop);
            return;
        case elektromontazhnyeRaboty:
            change(elektromontazhnyeRabotyColor);
@@ -180,6 +189,7 @@ $(document).ready(function () {
        default:
            change(defaultColor);
            changeLogo(defaultLogo);
+           changeTopBlockColor(defaultTopBlockColor);
            return;
    }
 });
