@@ -1,8 +1,9 @@
+/*
 function initMap() {
     var adress1 = {
         lat: 52.310714,
         lng: 104.236796
-        /*Трактовая, 18/36а*/
+        /!*Трактовая, 18/36а*!/
     };
 
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -23,4 +24,15 @@ function initMap() {
         map: map,
         //icon: ''
     });
-}
+}*/
+var map;
+DG.then(function () {
+    map = DG.map('map', {
+        center: [52.310714, 104.236796],
+        zoom: 12,
+        boxZoom: false,
+        zoomControl: false,
+        fullscreenControl: false
+    });
+    DG.marker([52.310714, 104.236796]).addTo(map);
+});

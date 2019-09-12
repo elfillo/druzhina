@@ -4,7 +4,7 @@
 </div>
 </div>
 <?php get_template_part('parts/icons'); ?>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGO73JZuXDz8xt_zvygl0FreR9cfQ9THE&callback=initMap"></script>
+<!--<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGO73JZuXDz8xt_zvygl0FreR9cfQ9THE&callback=initMap"></script>-->
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
