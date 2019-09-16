@@ -1,7 +1,7 @@
 <?php
 $uri = $_SERVER['REQUEST_URI'];
-$formatUri = substr(substr($uri, 0, -1), 1);
-$category = $formatUri;
+$formatUri = explode('/', $uri);
+$category = $formatUri[1];
 if($uri === '/')
     $category = 'home';
 ?>

@@ -1,7 +1,7 @@
 <?php
 $uri = $_SERVER['REQUEST_URI'];
-$formatUri = substr(substr($uri, 0, -1), 1);
-$category = $formatUri . '-img';
+$formatUri = explode('/', $uri);
+$category = $formatUri[1] . '-img';
 if($uri === '/')
     $category = 'home';
 ?>
