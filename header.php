@@ -12,6 +12,9 @@
 <?php get_template_part('parts/modal'); ?>
 <div class="container">
     <div class="mobile">
+        <div class="mobile--phone">
+            <a class="change_color" href="tel:+73952711111">+7 (3952) 71-11-11</a>
+        </div>
         <div class="burger">
             <span class="change_fill"></span>
             <span class="change_fill"></span>

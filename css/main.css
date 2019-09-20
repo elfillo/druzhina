@@ -505,7 +505,9 @@ body {
       width: calc(100% - 300px); } }
   @media screen and (max-width: 1200px) {
     .content {
-      width: 100%; } }
+      width: 100%;
+      padding-top: 40px;
+      overflow: hidden; } }
 
 a {
   color: inherit; }
@@ -581,6 +583,9 @@ a.active {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; } }
+  .mobile--phone {
+    width: 100%;
+    text-align: center; }
   .mobile .burger {
     width: 25px;
     height: 25px !important;
