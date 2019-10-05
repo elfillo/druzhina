@@ -669,4 +669,8 @@ a.active {
       -ms-flex-align: center;
           align-items: center; }
 
+td {
+  padding: 10px;
+  border: 1px solid #000; }
+
 /*# sourceMappingURL=main.css.map */
