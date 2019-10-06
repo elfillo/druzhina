@@ -18,7 +18,9 @@ if($uri === '/')
                 <div class="desc">
                     <?php the_content();?>
                 </div>
-                <div class="btn btn--modal btn--small btn--orange change_border change_color">Заказать</div>
+                <?php if($category != 'czeny-na-remont'):?>
+                    <div class="btn btn--modal btn--small btn--orange change_border change_color">Заказать</div>
+                <?php endif; ?>
             </div>
         </div>
     <?php endwhile; endif; ?>

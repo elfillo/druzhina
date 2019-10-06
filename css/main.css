@@ -673,4 +673,13 @@ td {
   padding: 10px;
   border: 1px solid #000; }
 
+.wp-block-button a {
+  display: block;
+  background-color: inherit;
+  border: 1px solid #f1592a;
+  color: #f1592a !important; }
+  .wp-block-button a:hover {
+    background-color: #f1592a;
+    color: #fff !important; }
+
 /*# sourceMappingURL=main.css.map */
